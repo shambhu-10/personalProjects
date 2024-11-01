@@ -5,6 +5,7 @@ this repo is for my personal projects.
 Done:-
 1. sign up page 
 2. sign in page 
+3. input taking of sign in/up
 
 to create :-
 1. home page (index.html)
