@@ -1,0 +1,55 @@
+.txt {
+    font-size: 30px;
+}
+
+#time {
+    font-size: 100px;
+    margin-left: 400px;
+}
+
+#buttons {
+    margin-left: 470px;
+    /* padding-right: 50px; */
+    padding: 50px ;
+}
+
+#buttons > button {
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 20px;
+    /* padding: 10px; */
+}
+
+#start {
+    
+    background-color: rgb(122, 255, 122);
+    opacity: 0.8;
+}
+
+#start:hover {
+    cursor: pointer;
+    background-color: rgb(122, 255, 122);
+    opacity: 1;
+    
+}
+
+#stop {
+    background-color: rgb(255, 233, 91);
+    opacity: 0.8;
+}
+#stop:hover {
+    background-color: rgb(255, 233, 91);
+    opacity: 1;
+    cursor: pointer;
+}
+
+#reset {
+    background-color: rgb(255, 81, 81);
+    opacity: 0.7;
+}
+#reset {
+    background-color: rgb(255, 81, 81);
+    opacity: 1;
+    cursor: pointer;
+}
