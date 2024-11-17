@@ -95,7 +95,7 @@
         
 
         let count = document.createElement("p")
-        count.innerHTML = `counts: <span>0 </span>`
+        count.innerHTML = `counts: <span id="clickCount">0</span>`
         document.body.append(count)
 
 
@@ -111,7 +111,7 @@
         function increment() {
             clicks++
             console.log(clicks)
-            document.querySelector("p > span").innerText= clicks
+            document.querySelector("#clickCount").innerText= clicks
         }
 
 
