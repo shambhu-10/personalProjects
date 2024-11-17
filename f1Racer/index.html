@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 RACER CHALLENGE</title>
+    <style>
+        #container {
+            width: 70%;
+            height: 60%;
+            margin: 20% auto auto auto;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            
+        }
+        h1 {
+            font-size: 45px;
+            color: rgb(41, 41, 219);
+        }
+        p {
+            font-size: 25px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px;
+            background-color: rgb(44, 44, 212);
+            border: transparent;
+            border-radius: 8px;
+            
+        }
+        button:hover {
+            cursor: pointer;
+            transform: translateY(-3px);
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>F1 Rider Speed Challenge</h1>
+
+        <p>Can you beat the F1 rider speed? Click the button as fast as you can for the next 23 seconds!
+            A F1 rider has a average speed of 127 click per 23 seconds</p>
+
+        <button><a href="timer.html">Start Challenge</a></button>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("button").addEventListener(click, startTimer())
+
+    function startTimer() {
+        window.location.href = "timer.html"
+    }
+</script>

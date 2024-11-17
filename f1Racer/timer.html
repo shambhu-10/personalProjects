@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        #container {
+            width: 70%;
+            height: 60%;
+            margin: 20% auto auto auto;
+
+            text-align: center;
+
+        }
+
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 45px;
+            color: rgb(41, 41, 219);
+        }
+
+        h2 {
+            font-size: 40px;
+        }
+
+        p {
+            font-size: 25px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 10px;
+            background-color: rgb(44, 44, 212);
+            border: transparent;
+            border-radius: 8px;
+
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        button:active {
+            background-color: rgb(159, 187, 252);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>F1 Rider Speed Challenge Starts In</h1>
+        <h2 id="timer">3</h2>
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    let timeCount = document.querySelector("#timer").textContent
+    console.log(timeCount);
+
+    let x = setInterval(() => {
+        timeCount--
+        console.log(timeCount)
+        document.querySelector("#timer").textContent = timeCount
+
+        if (timeCount == 0) {
+            stop()
+        }
+
+    }, 1000)
+
+    function stop() {
+
+        clearInterval(x)
+        timerStart()
+    }
+
+    function timerStart() {
+        
+
+        let count = document.createElement("p")
+        count.innerHTML = `counts: <span>0 </span>`
+        document.body.append(count)
+
+
+        let btn = document.createElement("button")
+        btn.innerHTML = "click me!"
+        document.body.append(btn)
+
+
+        document.querySelector("button").addEventListener("click", increment)
+
+        let clicks = 0
+
+        function increment() {
+            clicks++
+            console.log(clicks)
+            document.querySelector("p > span").innerText= clicks
+        }
+
+
+
+        let timer = 7
+        document.querySelector("#timer").textContent = timer
+
+        let y = setInterval(() => {
+            timer--
+            document.querySelector("#timer").textContent = timer
+
+            if (timer == 0) {
+                stopTimer()
+            }
+        }, 1000);
+
+        function stopTimer() {
+            clearInterval(y)
+            window.location.href="video.html"
+
+        }
+
+
+    }
+
+
+
+</script>
