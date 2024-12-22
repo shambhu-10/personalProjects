@@ -1,0 +1,176 @@
+body {
+  width: fit-content;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #008080;
+  min-width: 300px;
+  box-sizing: border-box;
+}
+
+.users-page {
+  width: 1000px;
+  background-color: #008080;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-bottom: 20px;
+}
+.box {
+  padding: 15px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 240px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.box h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.box p {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.4;
+  margin: 5px 0;
+}
+
+.box span {
+  display: inline-block;
+  background-color: #e0f7fa;
+  color: #00796b;
+  padding: 3px 6px;
+  margin: 2px 0;
+  border-radius: 12px;
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .boxes {
+    gap: 10px;
+  }
+}
+.dotted-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  border: 2px dotted #3f3c3c;
+  background-color: #e8f0fe;
+  cursor: pointer;
+  width: 240px;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.box.dotted-box .add-workspace-text {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.box .plus-sign {
+  font-size: 45px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: rgb(99, 247, 99);
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  text-align: center;
+}
+
+.modal-content form input {
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: #333;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-content form input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-actions button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.modal-actions button:hover {
+  background-color: #0056b3;
+}
+
+.modal-actions button:last-child {
+  background-color: #ccc;
+  color: black;
+}
+
+.modal-actions button:last-child:hover {
+  background-color: #aaa;
+}
